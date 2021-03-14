@@ -93,4 +93,16 @@ class TicTacToe
     end
   end
 
+  def play
+    while !over?          #while the game is not over, initiate the method "turn"
+      turn
+    end
+    if won?
+      puts "Congraulations #{winner}!"
+    else draw?
+      puts "Cat's Game!"
+    end
+  end
+  
+
 end
